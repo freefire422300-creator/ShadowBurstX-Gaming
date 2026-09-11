@@ -11,182 +11,61 @@
         <!-- Navbar -->
         <nav class="navbar">
             <div class="logo">🎮 ShadowBurstX</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active" data-section="home">صفحه اصلی</a></li>
-                <li><a href="#social" class="nav-link" data-section="social">شبکه‌های اجتماعی</a></li>
-                <li><a href="#login" class="nav-link" data-section="login">ورود</a></li>
-                <li><a href="#" class="nav-link" id="logoutLink" style="display: none;">خروج</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button id="logoutBtn" class="logout-btn" style="display: none;">خروج</button>
         </nav>
 
-        <!-- Home Section -->
-        <section id="home" class="section active">
-            <div class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-title">ShadowBurstX</h1>
-                    <p class="hero-subtitle">PLAY HARD. SURVIVE. BE LEGEND.</p>
-                    <p class="hero-description">کانال گیمینگ حرفه‌ای برای تمام طرفداران بازی‌های اکشن و تیراندازی</p>
-                    <div class="hero-buttons">
-                        <a href="#social" class="btn btn-primary nav-link" data-section="social">دنبال کنید</a>
-                        <a href="#about" class="btn btn-secondary" onclick="scrollToAbout()">بیشتر بدانید</a>
+        <!-- Login Page -->
+        <div id="loginPage" class="page active">
+            <div class="login-container">
+                <h1>خوش آمدید</h1>
+                <p class="subtitle">ShadowBurstX Gaming</p>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">نام کاربری:</label>
+                        <input type="text" id="username" placeholder="نام کاربری خود را وارد کنید" required>
                     </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://via.placeholder.com/500x600/1a1a2e/ff4444?text=ShadowBurstX" alt="ShadowBurstX">
-                </div>
+                    <div class="form-group">
+                        <label for="password">رمز عبور:</label>
+                        <input type="password" id="password" placeholder="رمز عبور خود را وارد کنید" required>
+                    </div>
+                    <button type="submit" class="login-btn">ورود</button>
+                </form>
             </div>
+        </div>
 
-            <!-- About Section -->
-            <div id="about" class="about">
-                <h2>درباره ShadowBurstX</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            🎮 <strong>ShadowBurstX</strong> یک کانال گیمینگ حرفه‌ای است که تمام محتوای مربوط به بازی‌های اکشن، تیراندازی و استراتژیک را پوشش می‌دهد.
-                        </p>
-                        <p>
-                            ⚡ ما با بهترین گیمرها و محتوای خلاقانه، تجربه‌ای بی‌نظیر را برای طرفداران خود فراهم می‌کنیم.
-                        </p>
-                        <p>
-                            🔥 هر هفته محتوای جدید، تیوتوریال، و بازی‌های نیمه‌زندہ منتشر می‌شود.
-                        </p>
-                    </div>
-                    <div class="about-features">
-                        <div class="feature">
-                            <span class="feature-icon">🎯</span>
-                            <h3>محتوای متنوع</h3>
-                            <p>بازی‌های مختلف و محتوای آموزشی</p>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">⚡</span>
-                            <h3>کیفیت بالا</h3>
-                            <p>فیلم‌برداری و ویرایش حرفه‌ای</p>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">👥</span>
-                            <h3>جامعه فعال</h3>
-                            <p>تعامل مستقیم با مخاطبین</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats Section -->
-            <div class="stats">
-                <h2>آمار و اطلاعات</h2>
-                <div class="stats-container">
-                    <div class="stat-card">
-                        <div class="stat-number">500K+</div>
-                        <div class="stat-label">مشترک</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">10M+</div>
-                        <div class="stat-label">بازدید</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label">فیلم</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">5 سال</div>
-                        <div class="stat-label">تجربه</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Social Section -->
-        <section id="social" class="section">
-            <div class="social">
-                <h2>شبکه‌های اجتماعی</h2>
-                <p class="social-subtitle">دنبال کنید و بروز بمانید</p>
+        <!-- Main Page (After Login) -->
+        <div id="mainPage" class="page">
+            <div class="content">
+                <h1 class="title">شبکه های اجتماعی</h1>
+                
                 <div class="social-container">
-                    <a href="https://www.instagram.com/shadowburstx_ff" target="_blank" class="social-card">
-                        <div class="social-icon">📷</div>
+                    <a href="https://www.instagram.com/shadowburstx_ff" target="_blank" class="social-btn">
+                        <div class="icon">📷</div>
                         <div class="social-name">Instagram</div>
                         <div class="social-handle">@shadowburstx_ff</div>
-                        <div class="social-arrow">→</div>
                     </a>
 
-                    <a href="https://t.me/ShadowBurstXGaming" target="_blank" class="social-card">
-                        <div class="social-icon">✈️</div>
+                    <a href="https://t.me/ShadowBurstXGaming" target="_blank" class="social-btn">
+                        <div class="icon">✈️</div>
                         <div class="social-name">Telegram</div>
                         <div class="social-handle">@ShadowBurstXGaming</div>
-                        <div class="social-arrow">→</div>
                     </a>
 
-                    <a href="https://www.youtube.com/@ShadowBurstX_FF" target="_blank" class="social-card">
-                        <div class="social-icon">▶️</div>
+                    <a href="https://www.youtube.com/@ShadowBurstX_FF" target="_blank" class="social-btn">
+                        <div class="icon">▶️</div>
                         <div class="social-name">YouTube</div>
                         <div class="social-handle">@ShadowBurstX_FF</div>
-                        <div class="social-arrow">→</div>
                     </a>
                 </div>
             </div>
-        </section>
-
-        <!-- Login Section -->
-        <section id="login" class="section">
-            <div id="loginPage" class="login-page">
-                <div class="login-container">
-                    <div class="banner-container">
-                        <img src="https://via.placeholder.com/400x500/1a1a2e/ff4444?text=ShadowBurstX+Gaming" alt="ShadowBurstX Banner" class="banner-img">
-                    </div>
-                    <h1>ShadowBurstX Gaming</h1>
-                    <p class="subtitle">خوش آمدید</p>
-                    <form id="loginForm">
-                        <div class="form-group">
-                            <label for="username">نام کاربری:</label>
-                            <input type="text" id="username" placeholder="نام کاربری خود را وارد کنید" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">رمز عبور:</label>
-                            <input type="password" id="password" placeholder="رمز عبور خود را وارد کنید" required>
-                        </div>
-                        <button type="submit" class="login-btn">ورود</button>
-                    </form>
-                </div>
-            </div>
-
-            <div id="mainPage" class="main-page" style="display: none;">
-                <div class="welcome-container">
-                    <h1 class="welcome-title">خوش آمدید! 👋</h1>
-                    <p class="welcome-subtitle" id="welcomeUsername"></p>
-                    <p class="welcome-description">شما به پنل اختصاصی ShadowBurstX دسترسی دارید</p>
-                    
-                    <div class="user-dashboard">
-                        <div class="dashboard-card">
-                            <div class="card-icon">📺</div>
-                            <h3>آخرین فیلم‌ها</h3>
-                            <p>تمام فیلم‌های جدید و محتوای منتشر شده</p>
-                        </div>
-                        <div class="dashboard-card">
-                            <div class="card-icon">🎮</div>
-                            <h3>بازی‌های جاری</h3>
-                            <p>بازی‌هایی که الان در حال انجام است</p>
-                        </div>
-                        <div class="dashboard-card">
-                            <div class="card-icon">👥</div>
-                            <h3>جامعه</h3>
-                            <p>تعامل با دیگر کاربران و طرفداران</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
 
         <!-- Footer -->
         <footer class="footer">
             <p>🎮 ShadowBurstX — All Rights Reserved 2026 ©</p>
-            <p>طراحی و توسعه برای بهترین تجربه</p>
         </footer>
     </div>
 
-    <script src="main-script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
