@@ -30,6 +30,45 @@
                     </div>
                     <button type="submit" class="login-btn">ورود</button>
                 </form>
+
+                <!-- Sign Up Section -->
+                <div class="signup-section">
+                    <p class="signup-text">حساب کاربری ندارید؟</p>
+                    <button id="showSignupBtn" class="signup-btn">ثبت نام</button>
+                </div>
+            </div>
+
+            <!-- Sign Up Form (Hidden by default) -->
+            <div id="signupForm" class="signup-container" style="display: none;">
+                <div class="login-container">
+                    <h1>ثبت نام</h1>
+                    <p class="subtitle">به ShadowBurstX Gaming بپیوندید</p>
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="newUsername">نام کاربری:</label>
+                            <input type="text" id="newUsername" placeholder="نام کاربری انتخاب کنید" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newEmail">ایمیل:</label>
+                            <input type="email" id="newEmail" placeholder="ایمیل خود را وارد کنید" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">رمز عبور:</label>
+                            <input type="password" id="newPassword" placeholder="رمز عبور را انتخاب کنید" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">تأیید رمز عبور:</label>
+                            <input type="password" id="confirmPassword" placeholder="رمز عبور را تأیید کنید" required>
+                        </div>
+                        <button type="submit" class="login-btn">ثبت نام</button>
+                    </form>
+
+                    <!-- Back to Login -->
+                    <div class="signup-section">
+                        <p class="signup-text">حساب کاربری دارید؟</p>
+                        <button id="showLoginBtn" class="signup-btn">بازگشت به ورود</button>
+                    </div>
+                </div>
             </div>
         </div>
 
