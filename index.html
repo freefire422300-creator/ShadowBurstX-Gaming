@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowBurstX Gaming - شبکه های اجتماعی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">🎮 ShadowBurstX</div>
+            <button id="logoutBtn" class="logout-btn" style="display: none;">خروج</button>
+        </nav>
+
+        <!-- Login Page -->
+        <div id="loginPage" class="page active">
+            <div class="login-container">
+                <h1>ShadowBurstX Gaming</h1>
+                <p class="subtitle">خوش آمدید</p>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">نام کاربری:</label>
+                        <input type="text" id="username" placeholder="نام کاربری خود را وارد کنید" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">رمز عبور:</label>
+                        <input type="password" id="password" placeholder="رمز عبور خود را وارد کنید" required>
+                    </div>
+                    <button type="submit" class="login-btn">ورود</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Page (After Login) -->
+        <div id="mainPage" class="page">
+            <div class="content">
+                <h1 class="title">شبکه های اجتماعی</h1>
+                <p class="subtitle-text">برای دنبال کردن ShadowBurstX</p>
+                
+                <div class="social-container">
+                    <a href="https://www.instagram.com/shadowburstx_ff" target="_blank" class="social-btn">
+                        <div class="icon">📷</div>
+                        <div class="social-name">Instagram</div>
+                        <div class="social-handle">@shadowburstx_ff</div>
+                    </a>
+
+                    <a href="https://t.me/ShadowBurstXGaming" target="_blank" class="social-btn">
+                        <div class="icon">✈️</div>
+                        <div class="social-name">Telegram</div>
+                        <div class="social-handle">@ShadowBurstXGaming</div>
+                    </a>
+
+                    <a href="https://www.youtube.com/@ShadowBurstX" target="_blank" class="social-btn">
+                        <div class="icon">▶️</div>
+                        <div class="social-name">YouTube</div>
+                        <div class="social-handle">ShadowBurstX</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🎮 ShadowBurstX — All Rights Reserved 2026 ©</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
