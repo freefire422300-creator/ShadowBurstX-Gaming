@@ -1,4 +1,4 @@
-// DOM Elements
+//DOM Elements
 const loginForm = document.getElementById('loginForm');
 const loginPage = document.getElementById('loginPage');
 const mainPage = document.getElementById('mainPage');
